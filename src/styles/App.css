@@ -1,5 +1,6 @@
 .container {
-  width: 375px;
+  width: 400px;
   margin: auto;
   box-sizing: border-box;
+  overflow: hidden;
 }

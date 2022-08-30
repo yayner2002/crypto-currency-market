@@ -3,7 +3,7 @@ import React from 'react';
 
 const Helmet = (props) => {
   const { title, children } = props;
-  document.title = `Crypto - ${title}`;
+  document.title = `${title}`;
   return (
     <div>{children}</div>
   );

@@ -25,3 +25,11 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.coin-detail-title {
+  background-color: #355ba3;
+  padding: 0.5rem 0;
+  margin-bottom: 0%;
+  border-bottom: 1px solid #4369b2;
+  color: #fff;
+}
