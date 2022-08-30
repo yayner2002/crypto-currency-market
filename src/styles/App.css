@@ -1,0 +1,6 @@
+.container {
+  width: 375px;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid red;
+}

@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import { fetchCoinInfo, selectCoins } from '../../redux/crypto/Cryptos';
 import Helmet from '../Helmet/Helmet';
+import Header from './Header';
+import '../../styles/Home.css';
 
 let init = true;
 const Home = () => {
   const coins = useSelector(selectCoins);
-  // const {
-  //   name, rank, symbol, priceUsd, marketCapUsd,
-  // } = coins[0];
 
   const dispatch = useDispatch();
 
@@ -22,13 +19,17 @@ const Home = () => {
   }, [dispatch]);
   return (
     <Helmet title="Home">
-      <h1>
-        <ul>
-          {coins.map((coins) => (
-            <li key={coins.id}>{coins.name}</li>
-          ))}
-        </ul>
-      </h1>
+      <Header />
+      <div className="coinContainer">
+        {coins.map((coin) => (
+          <div className="singleCoin" key={coin.id} d-flex align-items-left>
+            <h3>{coin.name}</h3>
+            <h4>{coin.symbol}</h4>
+            <small>{`${coin.priceUsd}$`}</small>
+          </div>
+        ))}
+      </div>
+
     </Helmet>
   );
 };

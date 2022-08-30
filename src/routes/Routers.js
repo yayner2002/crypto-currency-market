@@ -5,6 +5,7 @@ import Home from '../components/pages/Home';
 const Routers = () => (
   <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="home" element={<Home />} />
   </Routes>
 );
 
