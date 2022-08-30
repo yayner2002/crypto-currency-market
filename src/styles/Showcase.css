@@ -1,7 +1,7 @@
 .show-case-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: #4369b2;
+  background: #305aa8;
   width: 100%;
   min-height: 8rem;
   color: #fff;
@@ -10,6 +10,8 @@
 .show-case-section .showcaseimg {
   width: 100%;
   height: 100%;
+  background: transparent !important;
+  opacity: calc(100% - 70%);
 }
 
 .show-case-title {

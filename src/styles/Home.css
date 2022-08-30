@@ -4,6 +4,7 @@
   gap: 0.08rem;
   box-sizing: border-box;
   overflow: hidden;
+  background: #6a88be;
 }
 
 a {
@@ -16,11 +17,16 @@ a:hover {
 }
 
 .singleCoin {
-  background: #4369b2;
+  background: #305aa8;
   color: #fff;
   display: flex;
   flex-direction: column;
   padding: 0% 0.2rem;
+}
+
+.singleCoin:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
 }
 
 .coins-title {
