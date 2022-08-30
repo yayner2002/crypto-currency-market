@@ -11,10 +11,21 @@
 
 .singleCoinDetail li {
   align-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.singleCoinDetail li:hover {
+  background: #042a72;
 }
 
 .singleCoinDetail li:nth-child(even) {
   background: #3e62a4;
+}
+
+.list-items:hover {
+  background: #042a72;
+  transition: 0.5s;
+  transform: scale(0.9);
 }
 
 .singleCoinDetail li:nth-child(odd) {
