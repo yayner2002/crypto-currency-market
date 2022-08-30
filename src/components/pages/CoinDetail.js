@@ -17,7 +17,9 @@ const CoinDetail = () => {
     <Helmet title="CoinDetail">
       <>
         <ShowCase />
-        <h5>Coin Detail</h5>
+        <div className="coin-detail-title">
+          <h5>Coin Detail</h5>
+        </div>
         <ul className="singleCoinDetail">
           {coinDetail.map((coin) => (
             <>
