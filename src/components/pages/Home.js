@@ -21,7 +21,7 @@ const Home = () => {
   }, [dispatch]);
   return (
     <Helmet title="Home">
-      <ShowCase />
+      <ShowCase title="Digital Currency" numbers={coins.length} />
       <div className="coin-title-container">
         <h5 className="coins-title">Coins By Name, Symbol, Price</h5>
       </div>

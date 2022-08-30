@@ -16,7 +16,11 @@ const CoinDetail = () => {
 
     <Helmet title="CoinDetail">
       <>
-        <ShowCase />
+        {coinDetail.map((coin) => (
+          <ShowCase title={coin.name} symbol={coin.symbol} key={coin.id} rank={coin.rank} />
+
+        ))}
+
         <div className="coin-detail-title">
           <h5>Coin Detail</h5>
         </div>
