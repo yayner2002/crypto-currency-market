@@ -1,19 +1,19 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
-const apiEndPoint = 'https://api.coincap.io/v2/assets';
+const apiEndPoint = "https://api.coincap.io/v2/assets";
 
 export const fetchCoinInfo = createAsyncThunk(
-  'coins/fetchCoinsInfo',
+  "coins/fetchCoinsInfo",
   async () => {
     const response = await axios.get(`${apiEndPoint}`);
     return response.data;
-  },
+  }
 );
 
 const initialState = [];
 const coinsSlice = createSlice({
-  name: 'coins',
+  name: "coins",
   initialState,
   extraReducers: {
     [fetchCoinInfo.fulfilled]: (state, { payload }) => {
@@ -28,4 +28,5 @@ const coinsSlice = createSlice({
   },
 });
 
+export const selectCoins = () => (state) => state.coins;
 export default coinsSlice.reducer;
