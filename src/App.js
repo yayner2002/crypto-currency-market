@@ -1,9 +1,13 @@
 import React from 'react';
+import Header from './components/pages/Header';
+import Routers from './routes/Routers';
+import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Crypto currency</h1>
+    <div className="container">
+      <Header />
+      <Routers />
     </div>
   );
 }

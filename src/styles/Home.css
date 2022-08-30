@@ -1,0 +1,25 @@
+.coinContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.singleCoin {
+  background: #4369b2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.singleCoin span {
+  align-self: flex-end;
+}
