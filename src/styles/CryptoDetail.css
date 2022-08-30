@@ -2,4 +2,26 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.2rem;
+  list-style: none;
+  background: #4369b2;
+  margin: 0%;
+  color: #fff;
+  padding: 0% 0.3rem;
+}
+
+.singleCoinDetail li {
+  align-content: center;
+}
+
+.singleCoinDetail li:nth-child(even) {
+  background: #3e62a4;
+}
+
+.singleCoinDetail li:nth-child(odd) {
+  background: #355ba3;
+}
+
+.singleCoinDetail p {
+  font-size: 14px;
+  font-weight: bold;
 }

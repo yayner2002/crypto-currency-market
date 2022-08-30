@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #4369b2;
+  color: #fff;
+  padding: 1.2rem 0.5rem;
+  align-items: center;
+  align-content: center;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+
+.header-left span {
+  font-size: 20px;
+}
+
+.header-center h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.header-right {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.header-right span {
+  font-size: 18px;
+}

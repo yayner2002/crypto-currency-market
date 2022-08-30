@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.1rem;
+  border: 1px solid red;
 }
 
 a {
@@ -18,6 +19,26 @@ a:hover {
   color: #fff;
   display: flex;
   flex-direction: column;
+  padding: 0% 0.1rem;
+}
+
+.coins-title {
+  color: #fff;
+  font-size: 18px;
+}
+
+.coin-title-container {
+  width: 100%;
+  padding: 0.3rem 0;
+  background: #4369b2;
+  margin-bottom: 0%;
+}
+
+.singleCoin p {
+  padding: 0%;
+  margin: 0%;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .singleCoin span {
