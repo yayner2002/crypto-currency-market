@@ -15,6 +15,10 @@
 .show-case-title {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
   align-items: center;
+  align-content: center;
+}
+
+.show-case-title h3 {
+  text-align: center;
 }
