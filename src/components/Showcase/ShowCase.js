@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import showcase from '../../assets/images/showcase1.png';
 import '../../styles/Showcase.css';
