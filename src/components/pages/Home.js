@@ -25,7 +25,7 @@ const Home = () => {
       <div className="coinContainer">
         {coins.map((coin) => (
           <div className="singleCoin" key={coin.id}>
-            <span><Link to="/"><i className="ri-arrow-right-circle-line" /></Link></span>
+            <span><Link to={`coinDetail/${coin.id}`}><i className="ri-arrow-right-circle-line" /></Link></span>
             <h4>{coin.name}</h4>
             <h5>{coin.symbol}</h5>
             <small>{`${coin.priceUsd}$`}</small>
