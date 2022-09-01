@@ -12,7 +12,7 @@ const CoinDetail = () => {
   const coins = useSelector(selectCoins);
   const coinDetail = coins.filter((coin) => coin.id === id);
   return (
-    <div>
+    <>
       {coinDetail.map((coin) => (
         <DetailShowCase name={coin.name} symbol={coin.symbol} key={uuidv4()} rank={coin.rank} />
       ))}
@@ -61,7 +61,7 @@ const CoinDetail = () => {
           </div>
         ))}
       </ul>
-    </div>
+    </>
 
   );
 };

@@ -2,9 +2,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #305aa8;
-  width: 100%;
+  width: 375px;
+  margin: auto;
   min-height: 8rem;
   color: #fff;
+  border: 1px solid red;
 }
 
 .show-case-section .showcaseimg {

@@ -1,4 +1,6 @@
 .header {
+  width: 375px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   background: #4369b2;
@@ -6,7 +8,7 @@
   padding: 1.2rem 0.5rem;
   align-items: center;
   align-content: center;
-  width: 100%;
+  border: 1px solid yellow;
 }
 
 .header-left {

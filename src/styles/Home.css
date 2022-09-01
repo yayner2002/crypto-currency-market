@@ -5,7 +5,9 @@
   box-sizing: border-box;
   overflow: hidden;
   background: #6a88be;
-  width: 100%;
+  width: 375px;
+  margin: auto;
+  border: 1px solid red;
 }
 
 a {
@@ -36,13 +38,15 @@ a:hover {
 }
 
 .coin-title-container {
-  width: 100%;
+  width: 375px;
+  margin: auto;
   text-align: center;
   padding: 0.3rem 0;
   background: #4369b2;
   margin-bottom: 0%;
   border-bottom: 1px solid #325ba7;
   border-top: 1px solid #305aa8;
+  border: 1px solid black;
 }
 
 .singleCoin p {
