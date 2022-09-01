@@ -7,7 +7,6 @@
   background: #6a88be;
   width: 375px;
   margin: auto;
-  border: 1px solid red;
 }
 
 a {
@@ -46,7 +45,6 @@ a:hover {
   margin-bottom: 0%;
   border-bottom: 1px solid #325ba7;
   border-top: 1px solid #305aa8;
-  border: 1px solid black;
 }
 
 .singleCoin p {
