@@ -16,23 +16,23 @@ const ShowCase = (props) => {
 
         {document.title === 'Home' ? (
           <>
-            <span><h3>{title}</h3></span>
+            <span><h6>{title}</h6></span>
             <span>
-              <h4>
+              <h6>
                 {numbers}
                 {' '}
                 coins
-              </h4>
+              </h6>
             </span>
 
           </>
         ) : (
           <>
-            <span><h3>{name}</h3></span>
+            <span><h6>{name}</h6></span>
             <span>
-              <h4>
+              <h5>
                 {symbol}
-              </h4>
+              </h5>
             </span>
             <span>{rank}</span>
           </>

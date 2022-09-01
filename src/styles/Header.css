@@ -6,6 +6,7 @@
   padding: 1.2rem 0.5rem;
   align-items: center;
   align-content: center;
+  width: 100%;
 }
 
 .header-left {
@@ -15,7 +16,7 @@
 }
 
 .header-left span {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .header-right span {

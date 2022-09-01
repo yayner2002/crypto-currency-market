@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import App from '../App';
@@ -13,8 +13,15 @@ const MockApp = () => (
 
 );
 
+const showCoins = () => {
+  fireEvent.load();
+};
+
 describe('app', () => {
   it('should render text', async () => {
     render(<MockApp />);
+    showCoins();
+    const linkElement = screen.getAllByTestId(/coin-container/i);
+    expect(linkElement.length).toBe(100);
   });
 });

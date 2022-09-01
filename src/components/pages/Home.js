@@ -27,7 +27,7 @@ const Home = () => {
       </div>
       <div className="coinContainer">
         {coins.map((coin) => (
-          <div className="singleCoin" key={coin.id}>
+          <div className="singleCoin" key={coin.id} data-testid="coin-container">
             <span>
               <Link to={`coinDetail/${coin.id}`}>
                 <i className="ri-arrow-right-circle-line" />
@@ -39,7 +39,7 @@ const Home = () => {
             <Link to={`coinDetail/${coin.id}`}>
               <p>{coin.symbol}</p>
             </Link>
-            <small>{`${coin.priceUsd}$`}</small>
+            <small>{`${parseFloat(coin.priceUsd || 0).toFixed(5)}$`}</small>
           </div>
         ))}
       </div>

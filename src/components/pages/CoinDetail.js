@@ -38,27 +38,27 @@ const CoinDetail = () => {
               </li>
               <li key={uuidv4()} className="d-flex justify-content-between p-2 list-items">
                 <p>Supply:</p>
-                <p>{coin.supply}</p>
+                <p>{parseFloat(coin.supply || 0).toFixed(5)}</p>
               </li>
               <li key={uuidv4()} className="d-flex justify-content-between p-2 list-items">
                 <p>Market Capital(USD):</p>
-                <p>{coin.marketCapUsd}</p>
+                <p>{parseFloat(coin.marketCapUsd || 0).toFixed(5)}</p>
               </li>
               <li key={uuidv4()} className="d-flex justify-content-between p-2 list-items">
                 <p>Volume(USD) 24Hrs:</p>
-                <p>{coin.volumeUsd24Hr}</p>
+                <p>{parseFloat(coin.volumeUsd24Hr || 0).toFixed(5)}</p>
               </li>
               <li key={uuidv4()} className="d-flex justify-content-between p-2 list-items">
                 <p>Price(USD):</p>
-                <p>{coin.priceUsd}</p>
+                <p>{parseFloat(coin.priceUsd || 0).toFixed(5)}</p>
               </li>
               <li key={uuidv4()} className="d-flex justify-content-between p-2 list-items">
                 <p>Change Percent(24Hr):</p>
-                <p>{coin.changePercent24Hr}</p>
+                <p>{parseFloat(coin.changePercent24Hr || 0).toFixed(5)}</p>
               </li>
               <li key={uuidv4()} className="d-flex justify-content-between p-2 list-items">
                 <p>VWAP(24Hr):</p>
-                <p>{coin.vwap24Hr}</p>
+                <p>{parseFloat(coin.vwap24H || 0).toFixed(5)}</p>
               </li>
             </div>
           ))}

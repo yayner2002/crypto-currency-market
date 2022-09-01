@@ -1,6 +1,11 @@
 .container {
-  width: 400px;
+  width: 375px;
   margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
   box-sizing: border-box;
   overflow: hidden;
 }
