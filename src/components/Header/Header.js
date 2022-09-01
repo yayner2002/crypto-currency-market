@@ -3,6 +3,7 @@ import {} from 'reactstrap';
 import 'remixicon/fonts/remixicon.css';
 import { Link } from 'react-router-dom';
 import '../../styles/Header.css';
+import { v4 as uuidv4 } from 'uuid';
 
 import React from 'react';
 
@@ -18,7 +19,7 @@ const Header = () => (
         <span>2020</span>
       </div>
       <div className="header-center">
-        <h5>Crypto Market</h5>
+        <h5 data-testid={uuidv4()}>Crypto Market</h5>
       </div>
       <div className="header-right">
         <span>
