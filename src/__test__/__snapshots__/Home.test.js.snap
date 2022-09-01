@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home should show texts 1`] = `
+Array [
+  <div
+    className="show-case-section"
+  >
+    <div
+      className="show-case-image"
+    >
+      <img
+        alt="showcase"
+        className="showcaseimg"
+        src="showcase1.png"
+      />
+    </div>
+    <div
+      className="show-case-title"
+    >
+      <span>
+        <h6>
+          Digital Currency
+        </h6>
+      </span>
+      <span>
+        <h6>
+          0
+           
+          coins
+        </h6>
+      </span>
+    </div>
+  </div>,
+  <div
+    className="coin-title-container"
+  >
+    <h5
+      className="coins-title"
+      data-testid="heading"
+    >
+      Coins By Name, Symbol, Price
+    </h5>
+  </div>,
+  <div
+    className="coinContainer"
+    data-testid="coins-page"
+  />,
+]
+`;
