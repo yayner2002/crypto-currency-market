@@ -25,7 +25,7 @@ const Home = () => {
       <div className="coin-title-container">
         <h5 className="coins-title">Coins By Name, Symbol, Price</h5>
       </div>
-      <div className="coinContainer">
+      <div className="coinContainer" data-testid="coins-page">
         {coins.map((coin) => (
           <div className="singleCoin" key={coin.id} data-testid="coin-container">
             <span>

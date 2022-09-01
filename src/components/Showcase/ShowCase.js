@@ -1,6 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import showcase from '../../assets/images/showcase1.png';
+
 import '../../styles/Showcase.css';
 
 const ShowCase = (props) => {
@@ -44,4 +45,11 @@ const ShowCase = (props) => {
   );
 };
 
+ShowCase.propTypes = {
+  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  numbers: PropTypes.number.isRequired,
+  rank: PropTypes.number.isRequired,
+  symbol: PropTypes.string.isRequired,
+};
 export default ShowCase;
