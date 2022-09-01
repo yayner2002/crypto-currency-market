@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { toBeInTheDocument } from '@testing-library/jest-dom';
+import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
