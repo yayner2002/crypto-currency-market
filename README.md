@@ -11,7 +11,7 @@ This web App uses a real live data from the Blockchain API. It's a web applicati
 
 ## Screenshot
 
-![mockup](/src/assets/images/crypto.png?raw=true "mockup")
+![mockup](/src/assets/images/cryptomobile.png?raw=true "mockup")
 ## Live Demo Link
 
 [netlify](https://yay-crypto-market.netlify.app/)
