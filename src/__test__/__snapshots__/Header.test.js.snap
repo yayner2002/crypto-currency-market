@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header component should render header component corectlly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="header-left"
+  >
+    <span>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="ri-arrow-left-s-line"
+        />
+      </a>
+    </span>
+    <span>
+      2020
+    </span>
+  </div>
+  <div
+    className="header-center"
+  >
+    <h5
+      data-testid="6097b21f-d137-4538-80af-bf15fa4d7fe8"
+    >
+      Crypto Market
+    </h5>
+  </div>
+  <div
+    className="header-right"
+  >
+    <span>
+      <i
+        className="ri-mic-line"
+      />
+    </span>
+    <span>
+      <i
+        className="ri-settings-5-fill"
+      />
+    </span>
+  </div>
+</header>
+`;

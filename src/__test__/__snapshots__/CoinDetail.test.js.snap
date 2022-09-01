@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the detail component should render detail component correctlly 1`] = `null`;
