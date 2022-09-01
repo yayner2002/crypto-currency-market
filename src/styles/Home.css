@@ -5,6 +5,8 @@
   box-sizing: border-box;
   overflow: hidden;
   background: #6a88be;
+  width: 375px;
+  margin: auto;
 }
 
 a {
@@ -35,7 +37,9 @@ a:hover {
 }
 
 .coin-title-container {
-  width: 100%;
+  width: 375px;
+  margin: auto;
+  text-align: center;
   padding: 0.3rem 0;
   background: #4369b2;
   margin-bottom: 0%;

@@ -1,4 +1,6 @@
 .header {
+  width: 375px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   background: #4369b2;
@@ -15,7 +17,7 @@
 }
 
 .header-left span {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .header-right span {

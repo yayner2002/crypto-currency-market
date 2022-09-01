@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCoinInfo, selectCoins } from '../../redux/crypto/Cryptos';
-import Helmet from '../Helmet/Helmet';
 import '../../styles/Home.css';
 import 'remixicon/fonts/remixicon.css';
-import ShowCase from '../Showcase/ShowCase';
+import HomeShowCase from '../Showcase/HomeShowCase';
 
 let init = true;
 const Home = () => {
@@ -20,14 +19,14 @@ const Home = () => {
     }
   }, [dispatch]);
   return (
-    <Helmet title="Home">
-      <ShowCase title="Digital Currency" numbers={coins.length} />
+    <>
+      <HomeShowCase title="Digital Currency" numbers={coins.length} />
       <div className="coin-title-container">
-        <h5 className="coins-title">Coins By Name, Symbol, Price</h5>
+        <h5 className="coins-title" data-testid="heading">Coins By Name, Symbol, Price</h5>
       </div>
-      <div className="coinContainer">
+      <div className="coinContainer" data-testid="coins-page">
         {coins.map((coin) => (
-          <div className="singleCoin" key={coin.id}>
+          <div className="singleCoin" key={coin.id} data-testid="coin-container">
             <span>
               <Link to={`coinDetail/${coin.id}`}>
                 <i className="ri-arrow-right-circle-line" />
@@ -39,11 +38,11 @@ const Home = () => {
             <Link to={`coinDetail/${coin.id}`}>
               <p>{coin.symbol}</p>
             </Link>
-            <small>{`${coin.priceUsd}$`}</small>
+            <small>{`${parseFloat(coin.priceUsd || 0).toFixed(5)}$`}</small>
           </div>
         ))}
       </div>
-    </Helmet>
+    </>
   );
 };
 
