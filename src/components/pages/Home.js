@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCoinInfo, selectCoins } from '../../redux/crypto/Cryptos';
@@ -10,6 +10,7 @@ import HomeShowCase from '../Showcase/HomeShowCase';
 let init = true;
 const Home = () => {
   const coins = useSelector(selectCoins);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const dispatch = useDispatch();
 
@@ -19,13 +20,14 @@ const Home = () => {
       init = false;
     }
   }, [dispatch]);
+
   return (
     <>
       <HomeShowCase title="Digital Currency" numbers={coins.length} />
       <div className="coin-title-container">
         <h5 className="coins-title" data-testid="heading">Coins By Name</h5>
         <form className="form">
-          <input type="text" placeholder="Search Coin..." />
+          <input type="text" placeholder="Search Coin..." name="coinName" id="coinName" value={searchTerm} onChange={(e) => setSearchTerm(e.target.coinName.value)} />
           <button type="submit"><i className="ri-search-line" /></button>
         </form>
       </div>

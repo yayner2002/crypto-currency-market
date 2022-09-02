@@ -57,21 +57,27 @@ a:hover {
 .form {
   border: 1px solid #fff;
   border-radius: 1rem;
+  padding: 0.15rem 0;
 }
 
 .form input {
-  background: transparent;
+  /* background: transparent; */
   border: none;
   outline: none;
   width: 155px;
+  border-radius: 1rem;
   color: #fff;
   padding-left: 0.5rem;
+  background: #4369b2;
+  height: 100%;
 }
 
 .form button {
   outline: none;
   border: none;
   background: transparent;
+  margin-right: 0.3rem;
+  border-radius: 50%;
 }
 
 .form button i {
