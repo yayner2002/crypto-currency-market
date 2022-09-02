@@ -21,7 +21,7 @@ const CoinDetail = () => {
       </div>
       <ul className="singleCoinDetail">
         {coinDetail.map((coin) => (
-          <div key={uuidv4()}>
+          <div key={coin.id}>
             <li className="d-flex justify-content-between p-2 list-items">
               <p>Name:</p>
               <p>{coin.name}</p>
