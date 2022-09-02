@@ -40,6 +40,22 @@ Array [
     >
       Coins By Name
     </h5>
+    <form
+      className="form"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Search Coin..."
+        type="text"
+      />
+      <button
+        type="submit"
+      >
+        <i
+          className="ri-search-line"
+        />
+      </button>
+    </form>
   </div>,
   <div
     className="coinContainer"
