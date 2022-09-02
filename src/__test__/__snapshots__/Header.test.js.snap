@@ -25,7 +25,7 @@ exports[`Test Header component should render header component corectlly 1`] = `
     className="header-center"
   >
     <h5
-      data-testid="fbf02894-eeb9-4d00-a6d5-01d74e4002c9"
+      data-testid="title"
     >
       Crypto Market
     </h5>
