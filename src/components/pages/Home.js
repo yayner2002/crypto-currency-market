@@ -22,7 +22,7 @@ const Home = () => {
     <>
       <HomeShowCase title="Digital Currency" numbers={coins.length} />
       <div className="coin-title-container">
-        <h5 className="coins-title" data-testid="heading">Coins By Name, Symbol, Price</h5>
+        <h5 className="coins-title" data-testid="heading">Coins By Name</h5>
       </div>
       <div className="coinContainer" data-testid="coins-page">
         {coins.map((coin) => (
@@ -35,10 +35,6 @@ const Home = () => {
             <Link to={`coinDetail/${coin.id}`}>
               <p>{coin.name}</p>
             </Link>
-            <Link to={`coinDetail/${coin.id}`}>
-              <p>{coin.symbol}</p>
-            </Link>
-            <small>{`${parseFloat(coin.priceUsd || 0).toFixed(5)}$`}</small>
           </div>
         ))}
       </div>

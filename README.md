@@ -39,7 +39,9 @@ Feel free to check the [issues page](https://github.com/yayner2002/crypto-curren
 ## Show your support
 
 Give a ⭐️ if you like this project!
+## Acknowledgments
 
+- original [design ](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

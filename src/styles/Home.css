@@ -23,7 +23,11 @@ a:hover {
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 0% 0.2rem;
+  padding: 0% 0.5rem;
+}
+
+.singleCoin span a {
+  font-size: 18px;
 }
 
 .singleCoin:hover {
@@ -50,7 +54,7 @@ a:hover {
 .singleCoin p {
   padding: 0%;
   margin: 0%;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
 }
 
