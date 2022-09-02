@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -23,6 +24,10 @@ const Home = () => {
       <HomeShowCase title="Digital Currency" numbers={coins.length} />
       <div className="coin-title-container">
         <h5 className="coins-title" data-testid="heading">Coins By Name</h5>
+        <form className="form">
+          <input type="text" placeholder="Search Coin..." />
+          <button type="submit"><i className="ri-search-line" /></button>
+        </form>
       </div>
       <div className="coinContainer" data-testid="coins-page">
         {coins.map((coin) => (
