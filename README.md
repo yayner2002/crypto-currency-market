@@ -8,9 +8,6 @@ This web App uses a real live data from the Blockchain API. It's a web applicati
 - Redux Toolkit
 - Bootstrap
 - CSS
-
-## Video description About the project
-[follow this link for video description](https://loom.com/share/83b1fc8004b24551912ca63ea8ca0506)
 ## Screenshot
 
 ![mockup](/src/assets/images/cryptomobile.png?raw=true "mockup")
@@ -42,7 +39,9 @@ Feel free to check the [issues page](https://github.com/yayner2002/crypto-curren
 ## Show your support
 
 Give a ⭐️ if you like this project!
+## Acknowledgments
 
+- original [design ](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

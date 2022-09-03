@@ -23,7 +23,11 @@ a:hover {
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 0% 0.2rem;
+  padding: 0% 0.5rem;
+}
+
+.singleCoin span a {
+  font-size: 18px;
 }
 
 .singleCoin:hover {
@@ -45,12 +49,50 @@ a:hover {
   margin-bottom: 0%;
   border-bottom: 1px solid #325ba7;
   border-top: 1px solid #305aa8;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.form {
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  padding: 0.15rem 0;
+}
+
+.form input {
+  /* background: transparent; */
+  border: none;
+  outline: none;
+  width: 155px;
+  border-radius: 1rem;
+  color: #fff;
+  padding-left: 0.5rem;
+  background: #4369b2;
+  height: 100%;
+}
+
+.form button {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+}
+
+.form button i {
+  color: #fff;
+}
+
+.form input::placeholder {
+  color: #fff;
+  padding-left: 0.5rem;
 }
 
 .singleCoin p {
   padding: 0%;
   margin: 0%;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
 }
 

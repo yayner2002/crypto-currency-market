@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCoinInfo, selectCoins } from '../../redux/crypto/Cryptos';
@@ -9,6 +9,7 @@ import HomeShowCase from '../Showcase/HomeShowCase';
 let init = true;
 const Home = () => {
   const coins = useSelector(selectCoins);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const dispatch = useDispatch();
 
@@ -18,14 +19,26 @@ const Home = () => {
       init = false;
     }
   }, [dispatch]);
+
   return (
     <>
       <HomeShowCase title="Digital Currency" numbers={coins.length} />
       <div className="coin-title-container">
-        <h5 className="coins-title" data-testid="heading">Coins By Name, Symbol, Price</h5>
+        <h5 className="coins-title" data-testid="heading">Coins By Name</h5>
+        <form className="form">
+          <input type="text" placeholder="Search Coin..." onChange={(e) => { setSearchTerm(e.target.value); }} />
+          <button type="submit"><i className="ri-search-line" /></button>
+        </form>
       </div>
       <div className="coinContainer" data-testid="coins-page">
-        {coins.map((coin) => (
+        {coins.filter((coin) => {
+          if (searchTerm === '') {
+            return coin;
+          }
+          if (coin.name.toLowerCase().includes(searchTerm.toLowerCase().trim())) {
+            return coin;
+          }
+        }).map((coin) => (
           <div className="singleCoin" key={coin.id} data-testid="coin-container">
             <span>
               <Link to={`coinDetail/${coin.id}`}>
