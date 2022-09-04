@@ -1,5 +1,5 @@
 .singleCoinDetail {
-  width: 375px;
+  width: 100%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -39,7 +39,7 @@
 }
 
 .coin-detail-title {
-  width: 375px;
+  width: 100%;
   margin: auto;
   background-color: #355ba3;
   padding: 0.5rem 0;

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #305aa8;
-  width: 375px;
+  width: 100%;
   margin: auto;
   min-height: 8rem;
   color: #fff;
