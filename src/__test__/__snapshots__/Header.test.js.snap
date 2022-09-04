@@ -8,17 +8,7 @@ exports[`Test Header component should render header component corectlly 1`] = `
     className="header-left"
   >
     <span>
-      <a
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          className="ri-arrow-left-s-line"
-        />
-      </a>
-    </span>
-    <span>
-      2020
+      YayCriptoMarket
     </span>
   </div>
   <div
