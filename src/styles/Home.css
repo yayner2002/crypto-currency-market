@@ -102,3 +102,28 @@ a:hover {
 .singleCoin span {
   align-self: flex-end;
 }
+
+@media (max-width: 400px) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .form input {
+    padding-left: 0.3rem;
+  }
+
+  .coin-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .coins-title {
+    display: none;
+  }
+
+  .form input::placeholder {
+    font-size: 20px;
+  }
+}
