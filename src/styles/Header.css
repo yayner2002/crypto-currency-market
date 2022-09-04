@@ -8,6 +8,10 @@
   padding: 1.2rem 0.5rem;
   align-items: center;
   align-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 0%;
 }
 
 .header-left {
